@@ -1,0 +1,18 @@
+/* FOOTER */
+#footer{
+    background-color: $colorRaisingblack;
+    padding: 60px 0px;
+    color: $colorWhite;
+
+    a{
+        color: $colorWhite;
+        text-decoration: none;
+    }
+    
+    li{
+        margin: 0px 24px;
+    }
+    li:first-child{
+        margin-left: 0px;
+    }
+}

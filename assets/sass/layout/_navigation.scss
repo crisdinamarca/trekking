@@ -1,0 +1,25 @@
+/* MENU PRINCIPAL */
+#menu__principal{
+    margin-top: 25px;
+
+    #menu__principal-logo{
+        margin-right: 20px;
+    }
+
+    ul li{
+        margin: 0px 10px;
+        
+        a{
+            font-family: $fontOpensans;
+            color: $colorOnyx;
+            text-decoration: none;
+            letter-spacing: 0.025em;
+        }
+    }
+    #menu__principal-registro{
+
+        a{
+            font-weight: bold;
+        }
+    }
+}
