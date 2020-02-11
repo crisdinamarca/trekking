@@ -6,13 +6,34 @@
 
     a{
         color: $colorWhite;
-        text-decoration: none;
+        text-decoration: none
     }
-    
     li{
         margin: 0px 24px;
     }
     li:first-child{
         margin-left: 0px;
+    }
+    .footer__copyright{
+        text-align: right;
+    }
+    ul{
+        justify-content: flex-start !important; 
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #footer{
+        .footer__copyright{
+            text-align: center;
+        }
+        #footer__menu{
+            ul{
+                justify-content: center;  
+            }
+            li{
+                margin: 0px 15px; 
+            }        
+        }
     }
 }

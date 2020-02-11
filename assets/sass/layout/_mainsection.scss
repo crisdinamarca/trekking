@@ -1,33 +1,12 @@
-/* DESTACADO HERO */
-#hero{
-    &.bg__hero{
-        background-image: url('../img/bg-hero.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        padding-bottom: 400px;
-        background-position: right bottom;
-    }
-    #destacado{
-        padding-top: 20px;
-        height: 70vh;
-        flex-direction: column;
-        text-align: left;
-    }
-    h1{
-        font-weight: bold;
-        font-size: 50px;
-        margin-bottom: 20px;
-    }
-    p{
-        font-family: $fontOpensans;
-        line-height: 1.8em;
-    }
-}
-
 /* SECTION*/
 section{
     #caracteristicas{
         margin-bottom: 50px;
+        
+        img{
+            width: 90%;
+            height: auto;
+        }
     }
     h2{
         margin-bottom: 70px;
@@ -104,6 +83,45 @@ section{
 
                 @include bordeSuperior;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    section{
+        h2{
+            font-size: $font-xx-large;
+            margin-bottom: 40px;
+        }
+        h3{
+            font-size: $font-large;
+        }
+    }
+    #precios {
+        &.bg__precios{
+            background-size: 700px;
+            padding-top: 130px;
+            background-position: center top;
+        }
+        &:first-child{
+            margin-bottom: 30px;
+        }
+        .container{
+            background-color: #333745;
+        }
+        .row{
+            padding-bottom: 30px;
+        }
+    }
+    #caracteristicas{
+        .pl-5{
+            padding-left: 0px;
+        }
+        .pr-5{
+            padding-right: 0px;
+        }
+        img{
+            margin-bottom: 30px;
         }
     }
 }

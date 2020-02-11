@@ -23,3 +23,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px){
+    #menu__principal-menu,
+    #menu__principal-registro{
+        display: none
+    }
+}

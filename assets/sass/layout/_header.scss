@@ -1,0 +1,35 @@
+/* DESTACADO HERO */
+#hero{
+    &.bg__hero{
+        background-image: url('../img/bg-hero.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 400px;
+        background-position: right bottom;
+    }
+    #destacado{
+        padding-top: 20px;
+        height: 70vh;
+        flex-direction: column;
+        text-align: left;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-family: $fontOpensans;
+        line-height: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #hero{
+        &.bg__hero{
+        background-size: 160% !important;   
+        padding-bottom: 210px !important;
+        margin-bottom: 60px;
+        }
+    }
+}
