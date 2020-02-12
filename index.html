@@ -22,10 +22,13 @@
                     <a id="menu__principal-logo" href="">
                         <img src="assets/img/logo.svg" />
                     </a>
+                    <a id="menuMobile" href="">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </a>
                     <ul id="menu__principal-menu" class="d-flex align-items-center">
-                        <li><a href="http://">Acerca de</a></li>
-                        <li><a href="http://">Características</a></li>
-                        <li><a href="http://">Precios</a></li>
+                        <li><a href="#destacado">Acerca de</a></li>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#precios">Precios</a></li>
                     </ul>
                 </div>
                 <ul id="menu__principal-registro" class="d-flex align-items-center">
@@ -78,8 +81,9 @@
                     <h2>Precios</h2>
                 </div>
                 <div class="col-12">
-                    <div class="row d-flex justify-content-evenly">
-                        <div class="col-12 col-md-4 precios__card">
+                    <div class="d-flex justify-content-evenly precios__card-container">
+
+                        <div class="precios__card">
                             <h4>Trekk-in Free</h4>
                             <span>$0 / mes</span>
                             <ul>
@@ -89,7 +93,8 @@
                             <a class="btn btn-primary text-center" href="http://">Obtén Free</a>
                         </div>
                         <!-- FIN CARD -->
-                        <div class="col-12 col-md-4 precios__card">
+
+                        <div class="precios__card">
                             <h4>Trekk-in Free</h4>
                             <span>$3500 / mes</span>
                             <ul>
@@ -102,6 +107,7 @@
                             <a class="btn btn-primary text-center" href="http://">Obtén Premium</a>
                         </div>
                         <!-- FIN CARD -->
+
                     </div>
                 </div>
             </div>
@@ -135,6 +141,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
+
+    <!-- JS FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/55c5382b91.js" crossorigin="anonymous"></script>
 
     <!-- JS DE MENU -->
     <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>

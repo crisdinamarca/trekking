@@ -22,11 +22,60 @@
             font-weight: bold;
         }
     }
+    #menuMobile{
+        opacity: 0;
+        visibility: hidden;
+        color: $colorRaisingblack;
+    
+        &:active{
+            color: $colorRaisingblack;
+        }
+        i{
+            margin-top: 7px;
+        }
+    }
+    
+}
+#sidr-mobile{
+    background-color: $colorRaisingblack !important;
+    box-shadow: none !important;
+    
+    .sidr-inner{
+        padding-top: 40px;
+    }
+    #sidr-id-menu__principal-logo{
+        display: none !important;
+    }
+    ul,
+    li{
+        border: none;
+    }
+    li{
+        a{
+            padding: 0px 30px;
+        }
+        &:hover,
+        &:active,
+        &.sidr-class-active{
+            line-height: 48px;
+        }
+    }
+    
 }
 
 @media only screen and (max-width: 768px){
-    #menu__principal-menu,
-    #menu__principal-registro{
-        display: none
+    #menu__principal{
+        .contenedor__logo-menu{
+            justify-content: space-between;
+            width: 100%;
+        }
+        #menuMobile{
+            opacity: 1;
+            visibility: visible;
+        }
+        #menu__principal-menu,
+        #menu__principal-registro{
+            display: none;
+        }
     }
 }

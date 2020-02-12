@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  $('#menu-mobile').sidr({
+  $('#menuMobile').sidr({
     name: 'sidr-mobile',
-    source: '#menu__principal-menu, #menu__principal-registro'
+    source: '#menu__principal',
+    side: 'right'
   });
 });

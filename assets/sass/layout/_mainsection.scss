@@ -24,12 +24,25 @@ section{
 
 /* PRECIOS */
 #precios{
+    position: relative;
+
     &.bg__precios{
         background-image: url('../img/bg-price.svg');
         background-size: 100%;
         background-repeat: no-repeat;
         padding-top: 250px;
         background-position: right top;
+    }
+    &:after{
+        content: "";
+        display: block;
+        background-color: #323645;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 65%;
+        z-index: -1;
     }
     h2{
         color: $colorWhite;
@@ -111,6 +124,13 @@ section{
         }
         .row{
             padding-bottom: 30px;
+        }
+        .precios__card-container{
+            flex-direction: column;
+            
+            .precios__card{
+                margin-bottom: 40px;
+            }
         }
     }
     #caracteristicas{
