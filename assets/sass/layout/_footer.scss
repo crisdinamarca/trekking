@@ -18,13 +18,27 @@
         text-align: right;
     }
 }
-
+@media only screen and (max-width: 480px){
+    #footer{
+        .footer__copyright{
+            font-size: $font-small !important;
+        }
+        #footer__menu{
+            li{
+                a{
+                font-size: $font-small !important;
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 768px){
     #footer{
         .footer__copyright{
             text-align: center;
             margin-top: 20px;
             display: block;
+            font-size: $font-medium;
         }
         #footer__menu{
             justify-content: center !important;
@@ -34,6 +48,10 @@
             }
             li{
                 margin: 0px 15px; 
+                
+                a{
+                    font-size: $font-medium;
+                }
             }        
         }
     }

@@ -421,17 +421,25 @@ section p {
   #footer .footer__copyright {
     text-align: right; }
 
+@media only screen and (max-width: 480px) {
+  #footer .footer__copyright {
+    font-size: 14px !important; }
+  #footer #footer__menu li a {
+    font-size: 14px !important; } }
 @media only screen and (max-width: 768px) {
   #footer .footer__copyright {
     text-align: center;
     margin-top: 20px;
-    display: block; }
+    display: block;
+    font-size: 16px; }
   #footer #footer__menu {
     justify-content: center !important; }
     #footer #footer__menu ul {
       justify-content: center; }
     #footer #footer__menu li {
-      margin: 0px 15px; } }
+      margin: 0px 15px; }
+      #footer #footer__menu li a {
+        font-size: 16px; } }
 .btn {
   padding: 10px 20px;
   text-decoration: none; }
